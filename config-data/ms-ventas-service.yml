@@ -1,11 +1,9 @@
 server:
-  port: 8082  # O el puerto que prefieras
+  port: 8082
 
 spring:
   application:
     name: ms-ventas
-  config:
-    import: optional:configserver:http://root:123456@localhost:7070
 
 eureka:
   client:
@@ -14,5 +12,9 @@ eureka:
   instance:
     hostname: localhost
 
-
-
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html

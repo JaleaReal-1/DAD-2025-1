@@ -1,15 +1,15 @@
 package com.example.ms_ventas;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
-@EnableEurekaServer
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+
 public class MsVentasApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MsVentasApplication.class, args);
 	}
-
 }
