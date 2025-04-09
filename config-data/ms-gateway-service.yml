@@ -16,6 +16,7 @@ spring:
       discovery:
         locator:
           enable: true
+          lower-case-service-id: true
       routes:
         - id: ms-catalogo-service
           uri: lb://ms-catalogo-service
