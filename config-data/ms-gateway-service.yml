@@ -15,7 +15,7 @@ spring:
 
       discovery:
         locator:
-          enable: true
+          enabled: true
           lower-case-service-id: true
       routes:
         - id: ms-catalogo-service
