@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: ms-ventas
+    name: ms-ventas-service
   config:
     import: optional:configserver:http://root:123456@localhost:7070
 
