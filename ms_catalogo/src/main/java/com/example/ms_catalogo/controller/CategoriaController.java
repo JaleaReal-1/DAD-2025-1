@@ -1,7 +1,6 @@
 package com.example.ms_catalogo.controller;
 
 import com.example.ms_catalogo.entity.Categoria;
-import com.example.ms_catalogo.repository.CategoriaRepository;
 import com.example.ms_catalogo.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("categoria")
+@RequestMapping("/categorias")
 public class CategoriaController {
     @Autowired
     private CategoriaService categoriaService;

@@ -7,8 +7,12 @@ import java.util.Optional;
 
 public interface CategoriaService {
     List<Categoria> listar();
-    Optional <Categoria> buscar(Integer id);
+
+    Optional<Categoria> buscar(Integer id);
+
     Categoria guardar(Categoria categoria);
-    Categoria actualizar(Integer id, Categoria categoria );
+
+    Categoria actualizar(Integer id, Categoria categoria);
+
     void eliminar(Integer id);
 }

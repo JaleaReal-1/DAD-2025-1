@@ -13,6 +13,7 @@ import java.util.Optional;
 public class CategoriaServiceImpl implements CategoriaService {
     @Autowired
     private CategoriaRepository categoriaRepository;
+
     @Override
     public List<Categoria> listar() {
         return categoriaRepository.findAll();
@@ -37,6 +38,5 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public void eliminar(Integer id) {
         categoriaRepository.deleteById(id);
-
     }
 }

@@ -15,15 +15,9 @@ spring:
 
       discovery:
         locator:
-          enabled: true
-          lower-case-service-id: true
+          enable: true
       routes:
         - id: ms-catalogo-service
           uri: lb://ms-catalogo-service
           predicates:
-            - Path=/categoria/**
-
-        - id: ms-ventas-service
-          uri: lb://ms-ventas-service
-          predicates:
-            - Path=/ventas/**
+            - Path=/categorias/**
