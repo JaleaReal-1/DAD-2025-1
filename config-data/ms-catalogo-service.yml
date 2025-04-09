@@ -1,8 +1,6 @@
 server:
   port: 8081
-spring:
-  application:
-    name: ms_catalogo
+
 
   datasource:
     url: jdbc:mysql://localhost:3306/ms_catalogo
